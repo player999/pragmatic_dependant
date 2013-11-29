@@ -1,0 +1,48 @@
+%The Introduction serves to help the reader understand our
+%three key questions: Why is this a new and important problem?
+%What has been done before? How does your research bring
+%significant new understanding to the field? The reader should
+%find enough information to understand why your research was
+%necessary, without having to refer to other source material or
+%published works [7]. The introduction should be concise, no
+%more than one or two pages. It is written in the present tense.
+%Your introductory paragraph should start with what is generally
+%known about your subject. Then move step by step through
+%more detailed information, ending with a description of the
+%specific problem or hypothesis your article will discuss. Try to
+%use an attention-grabbing statement to hook the reader [10]
+%while being careful not to sensationalize your results.
+%In the next few paragraphs, refer to the published research to
+%show what is already known about your subject and why your
+%work is needed. Do not try to include everything from your
+%literature review. Your goal is to orient the reader to the most
+%relevant studies. Explain how each earlier study relates to your
+%own approach to the problem. Does it have limitations? Does it
+%make different assumptions [11]? Show your readers how your
+%study builds upon or is different from this existing work. If you
+%have published an earlier version of your work, for example as a
+%conference or journal article, you must explain how the current
+%study builds upon your own prior work [3].
+%After you have explained the historical context of your work,
+%introduce your hypothesis and provide a general description of
+%the results you have obtained. You will flesh these out more
+%fully later in the article, but providing an overview here motivates
+%your audience to read on. At the end of your introduction, tell
+%the reader how the article is organized. This will allow readers to
+%move to sections of particular interest, if they wish.
+
+%Why is this a new and important problem?
+%What has been done before? 
+%How does your research bring significant new understanding to the field? 
+\section{Introduction}
+Pragmatics dependent hardware depends solely on goals required to achieve with its development, the pargmatics. Noramally, hardware and software development processes depend on many other factors. For example, we want to develop one complicated computing solution. There are few options: to write new software with existant programming language for specific processor or to develop own hardware accelerator for this purpose and run it on reconfigurable platform along with other pieces of similar hardware. Thinking about new programming language design, designer unable to forsee all possible applications and design unvidersal programming language. Thinking about new CPU design, designer unable to predict all kinds of its usage, one relies only on general case, restricting software engineer's freedom of mind, who will use programming languages and CPU afterwards. This problem especially important nowadays, when chip designers will be unable to maintain Moore's low soon \cite{mooremaxwell} limited by fundamental laws.
+
+There are a plenty ways to deal with the problem and plenty efforts toward solution undertaken. A classification of reconfigurable patterns was developed by DeHon et al. \cite{reconfigurable_patterns} It is step forward to optimal hardware generation. Another effort toward multiplatform code was undertaken by M. Tarver, creator of LISP based Shen language, which produces program code in various other languages \cite{tarver2013book}. It can be modified to produce HDL too. Thus, margin between hardware and software will be removed.
+
+The design process needs a systematic approach. Consider computing device as a system, this system may be treated as one maximum closed. Output of the system depends only on input data and obfscure internal state.\\
+Counterexample is a hardware description language (HDL). It is maximum opened system. The closed part in this case is only set of basic operations and control structures.
+
+It is important to find a tradeof between opened and closed design systems before start design process depending on pragmatics of the given problem. As result, open-closed system will be optained, which will produce device designs.\\
+The other feature of proposed soultion is consideartion of a problem in different aspects: pragmatic, semantic, syntactic. Pragmatic aspect reflects intents of one who set the problem, a matter of it. Semantic aspect is actual solution of the problem, formed only by solution designer it does not depend on any specific tachnical aspects. It is formal expression of the idea. Syntactic aspect is implementation of semantic of solution of the problem for specific platform. All these aspects are separable one from another. In programming languages, there is no such separation. Semantic of problem solution id dissolved in programming language syntax. We propose to separate them explicitly. This will help to save investments in solution development, because such approach will make the solution portable to other platforms, HDL, programming languages. Pragmatic produces semantic, sematic produces syntax.
+
+In this paper attention mostly payed to automated transistion from semantic to syntax. I provided examples for HDL and assembly language in order to prove that semantic indeed does not depend on syntax even in such fundamentally different cases. The purpose of the research is to automate syntax production and provide handy development environment for developer.
